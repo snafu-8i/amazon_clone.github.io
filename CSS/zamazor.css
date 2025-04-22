@@ -1,0 +1,386 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    font-family:"Amazon Ember",Arial,sans-serif;
+    overflow-x:hidden;
+    background-color:#E3E6E6;
+}
+
+.section_caroussel{
+    position:relative;
+    z-index:1;
+    background:#E3E6E6;
+    width:1500px;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section_caroussel_div{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    max-height:600px;
+}
+.section_caroussel_container{
+    display:flex;
+    position: relative;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    width:100%;
+    height:600px;
+    z-index:1;
+}
+.auto{
+    scroll-behavior: auto;
+}
+.section_caroussel_img{
+    width:100%;
+    min-width:100%;
+}
+#caroussel_background_img{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 60%,#e3e6e6fb 100%),url(../Images/caroussel_1.jpg) center;
+    background-size: cover;
+}
+#caroussel_background_img1{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 60%,#e3e6e6fb 100%),url(../Images/caroussel_2.jpg) center;
+    background-size: cover;
+}
+#caroussel_background_img2{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 60%,#e3e6e6fb 100%),url(../Images/caroussel_3.jpg) center;
+    background-size: cover;
+}
+#caroussel_background_img3{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 60%,#e3e6e6fb 100%),url(../Images/caroussel_4.jpg) center;
+    background-size: cover;
+}
+#caroussel_background_img4{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 60%,#e3e6e6fb 100%),url(../Images/caroussel_5.jpg) center;
+    background-size: cover;
+}
+#caroussel_background_img5{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 60%,#e3e6e6fb 100%),url(../Images/caroussel_6.jpg) center;
+    background-size: cover;
+}
+#caroussel_background_img6{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 60%,#e3e6e6fb 100%),url(../Images/caroussel_7.jpg) center;
+    background-size: cover;
+}
+#caroussel_background_img7{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 60%,#e3e6e6fb 100%),url(../Images/caroussel_8.jpg) center;
+    background-size: cover;
+}
+.caroussel_button{
+    position:relative;
+    width: 75px;
+    height: 245px;
+    font-size: 2em;
+    font-weight: bold;
+    border:transparent;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.caroussel_button:focus{
+    border:white 2px solid;
+}
+.right{
+    right:0;
+}
+.left{
+    left:0;
+}
+.img_caroussel{
+    width:100%;
+    height: 100%;
+    display:block;
+    opacity:0;
+}
+
+.grid_article{/*réduire la min-width pour le nokia 4g*/
+    position:relative;
+    z-index:1;
+    border-radius:6px;
+    width:1500px;
+    max-width:100%;
+    display:grid;
+    gap:1.2em;
+    grid-template-rows: repeat(2,max-content);
+    grid-template-columns: repeat(auto-fit,minmax(285px,1fr));
+}
+.grid_element{
+    background-color:white;
+    position:relative;
+}
+.box_container{
+    margin-inline: 1em;
+    display:grid;
+    gap:0.5em;
+    grid-template-rows: repeat(2,150px);
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+}
+.box_container_a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.829);
+    font-size:0.9em;
+}
+.box_container div{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box_container img{
+    display: block;
+    width:  100%;
+    height:85%;
+    object-fit: contain;
+}
+.grid_element_a{
+    text-decoration: none;
+    color:rgb(15, 101, 129);
+    font-size:0.8em;
+}
+.grid_element_fixed{
+    background:url(../Images/sister.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area:2/1/3/3;
+}
+.grid_element_fixed img{
+    display: block;
+    max-width:100%;
+    height:100%;
+    opacity:1;
+}
+.grid_element_float{
+    display:none;
+}
+.voir_plus{
+    font-size:0.9em;
+    color:#2162a1;
+    margin-left:1.2em;
+    text-decoration:none;
+}
+.section_generic_caroussel{
+    background-color:white;
+    margin-inline:1.2em;
+    margin-top:1.2em;
+}
+.generic_caroussel_container,.generic_caroussel_container1,.generic_caroussel_container2{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+.generic_caroussel,.generic_caroussel1,.generic_caroussel2{
+    display:flex;
+    overflow:scroll;
+    scroll-behavior:smooth;
+    padding:2em;
+    scrollbar-width:thin;
+    background-color:white;
+    gap:1em;
+    z-index:2;
+}
+.generic_caroussel_img{
+    display:flex;
+    align-items:center;
+}
+.transparent_button_container,.transparent_button_container1,.transparent_button_container2{
+    display:flex;
+    position:absolute;
+    width:100%;
+    background-color: #37475A;
+}
+.transparent_button_container:hover,.transparent_button_container1:hover,.transparent_button_container2:hover{
+    cursor:pointer;
+}
+.transparent_button{
+    background-color:white;
+    padding:0.4em;
+    box-shadow: -2px 0px 3px 0px grey;
+}
+.transparent_button:hover{
+    cursor: pointer;
+}
+.generic_button_left,.generic_button_left1,.generic_button_left2{
+    display:none;
+    font-size:2.5em;
+    font-weight:bold;
+    transform: scaleX(-1);
+    z-index:2;
+}
+.generic_button_right,.generic_button_right1,.generic_button_right2{
+    display: none;
+    font-size:2.5em;
+    font-weight:bold;
+    margin-left: auto;
+    z-index:2;
+}
+.block{
+    display: block;
+}
+.grid_gapped{
+    margin-top: 1.2em;
+    margin-inline: 1.2em;;
+    display:grid;
+    gap:1.2em;
+    grid-template-rows: repeat(1,max-content);
+    grid-template-columns: repeat(auto-fit,minmax(285px,1fr));
+}
+#change_img img,#change_img1 img,#change_img2 img{
+    aspect-ratio:4/3;
+    object-fit:contain;
+    width:50%;
+}
+#change_description,#change_description1,#change_description2{
+    text-align: left;
+    margin:1em 1em 0em 1em;
+    font-size: 0.85em;
+    color:black;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+}
+#change_prix,#change_prix1,#change_prix2{
+    text-align: left;
+    margin:0em 0em 0.5em 0.7em;
+    padding-top:0.5em;
+    font-weight: 600;
+    font-size:1.2em;
+    color:black
+}
+.grid_grapped_list_container{
+    display:flex;
+    justify-content:center;
+    gap:0.5em;
+    margin:0em 1em 1.5em 1em;
+}
+.grid_grapped_list_container button{
+    background-color: transparent;
+}
+.grid_grapped_list_container button:hover{
+    border-color:#2162a1;
+    background-color: transparent;
+}
+.grid_gapped_list{
+    border:1px solid grey;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    padding:0.4em;
+}
+.grid_gapped_list:focus{
+    outline:3px solid #2162a1 ;
+}
+.grid_gapped_list img{
+    max-width:100%;
+}
+.border_blue{
+    outline:2px solid #2162a1 ;
+}
+.grid_gapped_full{
+    margin-top: 1.2em;
+    margin-inline: 1.2em;;
+    display:grid;
+    gap:1.2em;
+    grid-template-rows: repeat(1,min-content);
+    grid-template-columns: repeat(auto-fit,minmax(285px,1fr));
+}
+.box_container_full{
+    margin-inline: 1em;
+    display:grid;
+    gap:0.5em;
+    grid-template-rows: repeat(2,max-content);
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+    padding-bottom: 1em;
+}
+
+
+.test{
+    top:100%;
+    position:absolute;
+    z-index:3;
+    background-color: blue;
+}
+@media (max-width: 1235px) {
+    .grid_element_float{
+        display:block;
+    }
+    .pop{
+        display:none;
+    }
+    #bas{
+        position:absolute;
+        bottom:0;
+    }
+}
+@media (max-width:1122px) {
+    .footer_resp{
+        display:flex;
+    }
+    .footer_container{
+        display: none;
+    }
+    .section_menubar_resp{
+        display: block;
+    }
+    .section_menubar{
+        display: none;
+    }
+    .section_menubar_list{
+        overflow:scroll;
+        scrollbar-color: grey transparent;
+        scrollbar-width: thin;
+    }
+    .menubar_list{
+        flex-wrap: nowrap;
+    }
+    #toutes{
+        display:none;
+    }
+    .toutes_a:hover{
+        border-color:transparent;
+        color:rgba(255, 255, 255, 0.74);
+    }
+    .historique_drop_container:after, .historique_drop_container:before {
+        display:none;
+    }
+    .historique_drop_position{
+        padding-top: 15px;
+        top:135px;
+        border-top: none;
+    }
+    .business_drop_container{
+        display: none;
+    }
+    .carte_cadeaux_drop_container{
+        display:none;
+    }
+    .section_adress{
+        display: block;
+    }
+}
+@media (max-width:1122px) {
+    .grid_element_fixed img{
+        opacity:0;
+    }
+    .section_adress_drop{
+        display:block;
+    }
+}
+@media (max-width:931px){
+    .invisible{
+        display:none;
+    }
+}
+@media (max-width:625px) {
+    .grid_element_fixed{
+        grid-area:3/1/4/2;
+    }
+    #boutique_france{
+        display:none;
+    }
+}
