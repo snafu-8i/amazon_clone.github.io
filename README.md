@@ -8,4 +8,6 @@ The main functionalities are present and three pages are working :
 
 The project is responsive and can be used on a mobile phone. It also keeps the products in the basket even with a refresh of the page.
 
+08/05/25 : The cart and article_cart were updated and are now written in POO.
+
 It should be updated in the next few months.
